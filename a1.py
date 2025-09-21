@@ -22,9 +22,9 @@ for i in range(4):
 			borderwidth=1,
 			bg="#d0efff"
 		)
-		frame.grid(row=i, column=j, sticky="nsew")
+		frame.grid(row=i, column=j)
 
 		label = Label(master=frame, text=nums[i][j], bg='#d0efff', font=('Arial', 18))
-		label.pack(expand=True, fill='both', padx=5, pady=5)
+		label.pack(padx=5, pady=5)
 
 root.mainloop()
